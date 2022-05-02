@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bargraph</title>
+    <style>
+        section{
+            border-style: solid;
+            border-color: yellow;
+            border-width: 100px;
+            
+        }
+        #bar_graph{
+            background-color:aqua;
+            top:10%;
+            left:30%;
+            
+        }
+        #bar_graph article{
+            display:inline-block;
+           
+        }
+        div{
+            width:40px;
+            height: 300px;
+            margin:20px;
+            background-color:grey;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        h3{
+            margin: 25px;
+        }
+        #bar1{
+            width:100%;
+            height:70%;
+            background-color: white;
+            animation-name: mybar1;
+            animation-duration: 2s;
+            
+        }
+        @keyframes mybar1{
+            0%{height: 100%;background-color:white;}
+            100%{height:70%;background-color: white;}
+        }
+        #bar2{
+            width:100%;
+            height:60%;
+            background-color: white;
+            animation-name: mybar2;
+            animation-duration: 2s;
+        }
+        @keyframes mybar2{
+            0%{height: 100%;background-color: white;}
+            100%{height:60%;background-color: white;}
+        }
+        #bar3{
+            width:100%;
+            height:20%;
+            animation-name: mybar3;
+            background-color: white;
+            animation-duration: 2s;
+        }
+        @keyframes mybar3{
+            0%{height: 100%;background-color: white;}
+            100%{height:20%;background-color: white;}
+        }
+    </style>
+</head>
+<body>
+    <section id="bar_graph" style="text-align: center;">
+        <article>
+            <div>
+                <article id="bar1"></article>
+
+            </div>
+            <h3>30%</h3>
+        </article>
+        <article>
+            <div>
+                <article id="bar2"></article>
+
+            </div>
+            <h3>40%</h3>
+        </article>
+        <article>
+            <div>
+                <article id="bar3"></article>
+
+            </div>
+            <h3>80%</h3>
+        </article>
+        <h1 style="text-align:center; font-size: 20px;">Bar Plot</h1>
+
+    </section>
+</body>
+</html>

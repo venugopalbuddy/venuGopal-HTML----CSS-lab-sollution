@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            header {
+                background-color: red;
+                padding: 10px;
+                border-style: solid;
+                border-width: 3px;
+                border-color: black;
+                font-size: 15px;;
+
+            }
+            #menu{
+                margin: 0%;
+                background-color: grey;
+            }
+            #menu li a{
+                color:white;
+                text-decoration:none;
+                font-size: 12pt;
+            }
+            #menu li li a{
+                color: black;
+            }
+            #menu li li a:hover{
+                background-color: wheat;
+            }
+            #menu li{
+                display:inline-block;
+                padding: 8px;
+                
+            }
+            #menu li:nth-child(2):hover #dropdown_1, #menu li:nth-child(3):hover #dropdown_2 {
+                display:block;
+
+            }
+            #main:hover{
+                background-color: black;
+            }
+            #dropdown_1,#dropdown_2{
+                display:none;
+                width: auto;
+                position:absolute;
+                max-width: 120px;
+                background-color: palegreen;
+                padding:0px;
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+                color: black;
+                
+                
+            }    
+            
+            
+        </style>
+    </head>
+    <body>
+       <header><h2 align ="right">Demo of Dropdown</h2></header>
+       <nav>
+           <ul id="menu">
+               <li>
+                   <a href="#" id="main">Link 1</a>
+               </li>
+               <li>
+                   <a href="#" id="main">Link 2</a>
+                   <ul id="dropdown_1">
+                       <li><a href="#">DD_Link_1</a></li>
+                       <li><a href="#">DD_Link_2</a></li>
+                       <li> <a href="#">DD_Link_3</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" id="main">Link 3</a>
+                   <ul id="dropdown_2">
+                    <li><a href="#">DD_Link_1</a></li>
+                    <li><a href="#">DD_Link_2</a></li>
+                    <li><a href="#">DD_Link_3</a></li>
+                </ul>
+               </li>
+           </ul>
+       </nav>
+        
+        
+    </body>
+</html>
